@@ -1,0 +1,21 @@
+build/
+*.z64
+*.v64
+*.n64
+*.elf
+*.sym
+*.dfs
+filesystem/
+
+# build artefacts & logs
+build.log
+*.eeprom
+
+# IDE / OS metadata
+.directory
+
+# session notes and screenshots (not project sources)
+Screenshot_*.md
+Screenshot_*.png
+*.png
+claude --resume*.md
