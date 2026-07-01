@@ -1,3 +1,5 @@
+![Logo1](https://github.com/Cyd0n1a/LegendOfBlob64/blob/master/n64brew.webp?raw=true) <br>
+
 # Legend of Blob 64
 
 A physics-driven, top-down action-RPG for Nintendo 64 (Zelda: LttP style). Control a squishy rainbow blob that absorbs enemy and boss powers for combat and dungeon puzzles. This repository contains the engine, procedural asset generators, and game code; the full design & technical specification is in Legend-of-Blob-64-GDD.md.
