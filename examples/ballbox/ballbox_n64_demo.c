@@ -12,7 +12,7 @@
  */
 
 #define BALLBOX_IMPLEMENTATION
-#include "ballbox.h"
+#include "../../src/physics/ballbox.h"
 
 #include <libdragon.h>
 #include <t3d/t3d.h>

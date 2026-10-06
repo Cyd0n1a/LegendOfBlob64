@@ -1,4 +1,8 @@
 #!/bin/bash
+# Docker-only equivalent of the `libdragon` CLI workflow, for machines without the
+# CLI (CI, fresh containers). Installs the pinned libdragon submodule, builds the
+# pinned Tiny3D submodule in-tree, then runs `make` with any arguments given.
+# Usage: ./build.sh [make args]   e.g. ./build.sh clean
 set -euo pipefail
 
 LOG_FILE="build.log"

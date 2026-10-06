@@ -1,7 +1,8 @@
 BUILD_DIR = build
 
 include $(N64_INST)/include/n64.mk
-include tiny3d/t3d.mk
+T3D_INST = $(shell realpath tiny3d)
+include $(T3D_INST)/t3d.mk
 
 N64_ROM_TITLE = "Legend of Blob 64"
 N64_ROM_SAVETYPE = eeprom16k
