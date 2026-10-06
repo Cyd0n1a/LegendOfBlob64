@@ -1,3 +1,8 @@
+# Pins live in the submodule commits (see `git submodule status`), not in this file.
+# Currently pinned:
+#   libdragon 07f1977bbb66a8f61d949983342c27915932d5a5 (preview)
+#   tiny3d    7f5773f64a0cc8709d9126aa52da16d07c696cc2
+# `branch = preview` only affects `git submodule update --remote`; don't run that casually.
 [submodule "libdragon"]
 	path = libdragon
 	url = https://github.com/DragonMinded/libdragon.git

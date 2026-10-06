@@ -22,7 +22,8 @@ These are load-bearing. Violating any of them is a bug, not a style choice.
 2. **8 MB / Expansion Pak is mandatory.** `main.c` checks available RDRAM at boot; if
    < 8 MB, show the "Expansion Pak required" screen and halt. Never silently degrade to 4 MB.
 3. **Libdragon preview branch is required** (Tiny3D depends on it). Pin libdragon and
-   tiny3d submodules to exact SHAs in `.gitmodules`. Don't bump them casually — preview
+   tiny3d submodules to exact commits (git records the pin as the submodule commit; check
+   with `git submodule status`, SHAs are noted in `.gitmodules` comments). Don't bump them casually — preview
    APIs break; upgrade deliberately on a branch and re-test.
 4. **Target = FPGA clones first** (Analogue 3D et al.) then real N64 + Pak. Don't rely on
    analog-video quirks or emulator-only behavior.

@@ -2,7 +2,7 @@
 ![Logo2](https://github.com/Cyd0n1a/LegendOfBlob64/blob/master/n64-logo.png?raw=true) <br>
 # Legend of Blob 64
 
-A physics-driven, top-down action-RPG for Nintendo 64 (Zelda: LttP style). Control a squishy rainbow blob that absorbs enemy and boss powers for combat and dungeon puzzles. This repository contains the engine, procedural asset generators, and game code; the full design & technical specification is in Legend-of-Blob-64-GDD.md.
+A physics-driven, top-down action-RPG for Nintendo 64 (Zelda: LttP style). Control a squishy rainbow blob that absorbs enemy and boss powers for combat and dungeon puzzles. This repository contains the engine, procedural asset generators, and game code; the full design & technical specification is in docs/Legend-of-Blob-64-GDD.md.
 
 Status
 - Prototype / work-in-progress. Target platforms: FPGA N64 clones (Analogue 3D family) and real N64 hardware with Expansion Pak.
@@ -11,7 +11,7 @@ Status
 Non-negotiable constraints (read me first)
 - Procedural assets only: ALL meshes and sound effects are generated in code. No model importers, no sampled audio, no recorded WAVs. Fonts (.ttf) are the only permitted external assets.
 - Expansion Pak required: This project requires >= 8 MB RDRAM. main.c performs a runtime check and will halt with an "Expansion Pak required" message if < 8 MB is present.
-- libdragon preview branch required: libdragon and Tiny3D are pinned to exact SHAs in .gitmodules. Do NOT bump these SHAs casually.
+- libdragon preview branch required: libdragon and Tiny3D are pinned to exact commits (see `git submodule status`; SHAs are also noted in .gitmodules comments). Do NOT bump these SHAs casually.
 - Target hardware path: FPGA clones (first) → real N64 + Expansion Pak. Do not rely on emulator-specific behavior.
 
 Quick start (from a fresh clone)
@@ -54,6 +54,8 @@ src/
   ui/       # HUD, menus, text (rdpq + rdpq_text)
   world/    # room streaming, overworld grid
 assets/     # authored config: mesh-gen params, synth recipes, fonts
+docs/       # design & technical spec (GDD)
+examples/   # standalone demos, not part of the ROM build (see examples/ballbox)
 ```
 
 How it fits together
@@ -74,18 +76,18 @@ Contributing
 
 Troubleshooting
 - If build fails: ensure libdragon is initialized with `--branch preview` and submodules are updated.
-- To verify pinned SHAs: check `.gitmodules` for the submodule SHAs and confirm you are on the pinned commit before building.
+- To verify pinned SHAs: run `git submodule status` and confirm there is no leading `-` (uninitialised) or `+` (checked out at a different commit) before building.
 - If you see an Expansion Pak error at boot, confirm your target has >= 8MB RDRAM (Expansion Pak installed) — this is intentional.
 
 Design doc
-- Full design & technical spec: Legend-of-Blob-64-GDD.md (read when you need design context)
+- Full design & technical spec: docs/Legend-of-Blob-64-GDD.md (read when you need design context)
 
 License
 - TODO: add LICENSE (recommended: permissive open-source license if you intend to accept contributions, or mark proprietary).
 
 Maintainer / Contact
 - Repo owner: Cyd0n1a
-- For design questions, see Legend-of-Blob-64-GDD.md.
+- For design questions, see docs/Legend-of-Blob-64-GDD.md.
 
 Acknowledgements
-- Uses libdragon (preview) and Tiny3D; see .gitmodules for pinned SHAs.
+- Uses libdragon (preview) and Tiny3D; see `git submodule status` for pinned SHAs.
