@@ -6,7 +6,7 @@
 #ifndef T3D_PI
 #define T3D_PI 3.14159265f
 #endif
-
+/* (c) 2026 Cydonis Heavy Industries & Amanda Hariette-Scott (https://www.cydonis.co.uk/about) ^_^ */
 void mesh_gen_sphere(T3DVertPacked *out, int lat, int lon, float radius,
                      uint32_t rgba) {
     int idx = 0;
