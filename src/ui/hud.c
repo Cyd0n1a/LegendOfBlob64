@@ -1,6 +1,6 @@
 #include "hud.h"
 #include <libdragon.h>
-
+/* (c) 2026 Cydonis Heavy Industries & Amanda Hariette-Scott (https://www.cydonis.co.uk/about) ^_^ */
 /* ---- Layout (320x240 screen) ---- */
 #define GLOB_X0      8    /* left edge of first glob square */
 #define GLOB_Y0    224    /* top edge of glob row */
