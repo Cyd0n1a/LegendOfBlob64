@@ -4,7 +4,7 @@
 #include "audio/synth.h"
 #include "input/input.h"
 #include "render/render.h"
-
+/* (c) 2026 Cydonis Heavy Industries & Amanda Hariette-Scott (https://www.cydonis.co.uk/about) ^_^ */
 int main(void) {
     /* Hard constraint #2: 8 MB Expansion Pak required.
      * assert_memory_expanded() shows an error screen and halts if not present. */
