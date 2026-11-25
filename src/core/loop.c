@@ -9,7 +9,7 @@
 
 #define STEP_US        16667   /* 60 Hz fixed logic timestep */
 #define ABSORB_RANGE   50.f   /* Z-absorb range (world units) */
-
+/* (c) 2026 Cydonis Heavy Industries & Amanda Hariette-Scott (https://www.cydonis.co.uk/about) ^_^ */
 /* Touch radius for roll-stagger: blob body + enemy body */
 #define STAGGER_TOUCH  (24.f + ENEMY_RADIUS)
 
