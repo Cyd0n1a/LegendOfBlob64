@@ -6,7 +6,7 @@
 #define ROLL_SPEED   160.f
 #define BLOB_RADIUS   24.f
 #define START_GLOBS    3
-
+/* (c) 2026 Cydonis Heavy Industries & Amanda Hariette-Scott (https://www.cydonis.co.uk/about) ^_^ */
 void blob_init(blob_state_t *b) {
     b->x = b->z = 0.f;
     b->face_angle = 0.f;
