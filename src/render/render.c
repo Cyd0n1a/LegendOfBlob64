@@ -5,7 +5,7 @@
 #include <t3d/t3dmath.h>
 #include <libdragon.h>
 #include <math.h>
-
+/* (c) 2026 Cydonis Heavy Industries & Amanda Hariette-Scott (https://www.cydonis.co.uk/about) ^_^ */
 /* ---- Sphere geometry config ---- */
 #define BLOB_LAT   12
 #define BLOB_LON   12
